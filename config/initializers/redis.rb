@@ -7,4 +7,4 @@ redis_config = {
   ssl_params: { verify_mode: OpenSSL::SSL::VERIFY_NONE }
 }
 
-Redis.current = Redis.new(redis_config)
+$redis = Redis.new(redis_config)
